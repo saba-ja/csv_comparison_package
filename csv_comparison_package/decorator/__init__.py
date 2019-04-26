@@ -1,0 +1,1 @@
+from csv_comparison_package.decorator.__call_each import call_each

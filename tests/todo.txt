@@ -1,0 +1,38 @@
+steps:
+01- check_for_type_dictionary
+02- check_for_empty_dictionary
+03- check_for_key_to_be_string_type
+04- check_for_required_key
+05- check_for_type_string
+06- check_for_parameter_strip
+07- check_for_special_character
+08- check_for_empty_value
+09- check_for_default_schema
+10- check_for_parameter_type
+11- check_for_required_parameter_value_with_any_type_to_not_be_empty
+12- check_for_input_file_existence
+13- check_for_file_read_access
+14- check_for_file_write_access
+TODO check_for_file_size
+
+
+set_parameter_default
+
+00- set_file_encoding
+00- set_file_encoding
+00- check_for_file_encoding
+
+TODO check_for_header_row_to_not_be_zero
+
+
+    """
+    When no encoding is given panda will raise UnicodeDecodeError
+    When encoding is given but it cannot detect it it will raise LookupError
+
+    When column names are given and skiprows is used
+    if the new row does not contain any data panda will not raise any error
+    and will create an empty df
+
+    If encoding parameter is provided it will raise lookup error
+    If it is not provided it will raise unicode error
+    """

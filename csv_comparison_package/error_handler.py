@@ -1,0 +1,45 @@
+class AppErrorHandler(Exception):
+    """ raise this when there's an error in the app """
+
+    """"""""""""""""""""""""""""""""""""""
+    """ input_validator error messages """
+    """"""""""""""""""""""""""""""""""""""
+    no_parameter = "Error, one or more submitted parameters do not exist"
+    invalid_key = "Error, invalid key has been provided"
+    invalid_key_type = "Error, parameter key must be string type"
+    missing_required_key = "Error, cannot finding the key {0}"
+    invalid_dictionary = "Error, parameter must be of type dictionary"
+
+    empty_file = "Error, file can not be empty"
+    empty_list = "Error, parameter list can not be empty"
+
+    invalid_value = "Error, provided value is invalid"
+    invalid_value_type = "Error, provided value has invalid type"
+
+    unknown_encoding = "Error, can not detect file encoding"
+
+    read_access = "Error, can not read the file"
+    write_access = "Error, can not write to file"
+    no_file = "Error, file does not exist"
+
+    invalid_delimiter = "Error, invalid delimiter"
+    """"""""""""""""""""""""""""""""""""""
+    """ header_validator error messages """
+    """"""""""""""""""""""""""""""""""""""
+
+    header_row_out_of_range = "Error, header row out of range"
+    missing_index_column = "Error, could not find the index column in the header"
+    missing_mapped_column = "Error, mapped column does not exist"
+    map_and_index_conflict = "Error, cannot map index column"
+    incorrect_column_location = "Error, incorrect column location"
+    ambiguous_index_column = "Error, more than one index column with the same exist"
+    ambiguous_map_column = "Error, more than one column with the same name exist in map column"
+    """"""""""""""""""""""""""""""""""""""
+    """ index_validator error messages """
+    """"""""""""""""""""""""""""""""""""""
+    import_error = "Error, could not import data"
+    """"""""""""""""""""""""""""""""""""""
+    """ cell_validator error messages  """
+    """"""""""""""""""""""""""""""""""""""
+    invalid_index_list = "Error, index numbers between two data is not identical"
+    invalid_header_list = "Error, header of two data is not identical"
